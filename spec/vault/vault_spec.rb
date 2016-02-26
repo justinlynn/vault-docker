@@ -9,7 +9,7 @@ describe "vault" do
   set :docker_image, image.id
 
   it "installs the correct version of vault" do
-    expect(vault_version).to include('0.5.0')
+    expect(vault_version).to include('0.5.1')
   end
 
   def vault_version
