@@ -1,7 +1,7 @@
 FROM alpine:3.3
 MAINTAINER J Lynn <Justin.Lynn@cba.com.au>
 
-ENV VAULT_VERSION 0.5.0
+ENV VAULT_VERSION 0.5.1
 ENV VAULT_REL_ENV linux_amd64
 
 ENV VAULT_TMP /tmp/vault-install
