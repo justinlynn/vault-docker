@@ -26,7 +26,7 @@ Client Usage
 
 If you do not have the vault installed on your local workstation, alias the vault client inside the docker container to a more comfortable command:
 
-    $ alias vault="docker run --rm --link vault:vault -e "VAULT_ADDR=http://vault:8200/" jaesharp/vault-docker:0.5.0-1"
+    $ alias vault='docker run --rm --link vault:vault -e "VAULT_ADDR=http://vault:8200/" -e "VAULT_TOKEN='\$VAULT_TOKEN'"jaesharp/vault-docker:0.5.0-1'
     $ vault version # to test
 
 The first time you start vault on your development machine, you'll have to run the init command first to set up the secret storage volume. See [the
